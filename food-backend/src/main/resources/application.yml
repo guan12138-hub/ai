@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3307/food_control?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: 123456
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/food_control?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true}
+    username: ${SPRING_DATASOURCE_USERNAME:root}
+    password: ${SPRING_DATASOURCE_PASSWORD:123456}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   servlet:
@@ -38,7 +38,7 @@ sa-token:
   token-style: uuid
   is-log: false
 
-# AI API config - 婵犻潧顦介崑鍕矗閸℃ɑ濯撮柣妯虹仛閻?API Key
+# AI API config - 婵犻潧顦介崑鍕矗閸℃ɑ濯撮柣妯虹仛閻?API Key
 ai:
   coze:
     api-url: https://api.coze.cn/open_api/v2/chat
@@ -48,7 +48,7 @@ ai:
     api-key: 8ff0af900f7b48978a0ef581555cfa2a.wRA7sdNuTk2OSbVK
     image-api-url: https://open.bigmodel.cn/api/paas/v4/images/generations
   deepseek:
-    # 闂佽　鍋撴い鏍ㄧ☉閻?DeepSeek / SiliconFlow / 闂備緡鍋呴惌顔剧不閻旂厧纭€闁告劦鍠楅敍?缂?OpenAI 闂佺绻掗崢褔顢?API
+    # 闂佽　鍋撴い鏍ㄧ☉閻?DeepSeek / SiliconFlow / 闂備緡鍋呴惌顔剧不閻旂厧纭€闁告劦鍠楅敍?缂?OpenAI 闂佺绻掗崢褔顢?API
     api-url: https://api.deepseek.com/v1/chat/completions
     api-key: sk-89a76ab62df34e04b364e3cb44442553
 
@@ -56,3 +56,4 @@ ai:
 file:
   upload-path: ./uploads
   access-path: /uploads
+
