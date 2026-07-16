@@ -1,0 +1,20 @@
+{
+  "name": "food-miniapp",
+  "version": "1.0.0",
+  "description": "AI智能食材管理-微信小程序",
+  "private": true,
+  "scripts": {
+    "dev:mp-weixin": "uni-cli dev --platform mp-weixin",
+    "build:mp-weixin": "uni-cli build --platform mp-weixin"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "pinia": "^2.1.0",
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-app": "^3.0.0",
+    "@dcloudio/uni-cli": "^3.0.0",
+    "@dcloudio/uni-mp-weixin": "^3.0.0"
+  }
+}

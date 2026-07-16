@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {"path": "pages/login/login", "style": {"navigationBarTitleText": "登录", "navigationStyle": "default"}},
+    {"path": "pages/index/index", "style": {"navigationBarTitleText": "首页", "enablePullDownRefresh": true}},
+    {"path": "pages/stock/stock", "style": {"navigationBarTitleText": "食材库存"}},
+    {"path": "pages/ai-chat/ai-chat", "style": {"navigationBarTitleText": "AI 问答"}},
+    {"path": "pages/ai-generate/ai-generate", "style": {"navigationBarTitleText": "AI 生成"}},
+    {"path": "pages/profile/profile", "style": {"navigationBarTitleText": "我的"}}
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "AI智能食材管理",
+    "navigationBarBackgroundColor": "#409EFF",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#409EFF",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {"pagePath": "pages/index/index", "text": "首页", "iconPath": "static/tab/home.png", "selectedIconPath": "static/tab/home-active.png"},
+      {"pagePath": "pages/stock/stock", "text": "库存", "iconPath": "static/tab/stock.png", "selectedIconPath": "static/tab/stock-active.png"},
+      {"pagePath": "pages/ai-chat/ai-chat", "text": "AI问答", "iconPath": "static/tab/ai.png", "selectedIconPath": "static/tab/ai-active.png"},
+      {"pagePath": "pages/ai-generate/ai-generate", "text": "AI生成", "iconPath": "static/tab/gen.png", "selectedIconPath": "static/tab/gen-active.png"},
+      {"pagePath": "pages/profile/profile", "text": "我的", "iconPath": "static/tab/profile.png", "selectedIconPath": "static/tab/profile-active.png"}
+    ]
+  }
+}

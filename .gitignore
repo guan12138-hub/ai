@@ -1,0 +1,39 @@
+﻿# Java
+*.class
+*.jar
+target/
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+.vscode/
+
+# Node
+node_modules/
+dist/
+.env
+*.local
+
+# Vue
+food-web/node_modules/
+food-web/dist/
+
+# UniApp
+food-miniapp/node_modules/
+food-miniapp/dist/
+food-miniapp/unpackage/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Uploads
+uploads/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
